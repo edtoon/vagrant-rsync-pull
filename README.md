@@ -11,16 +11,16 @@ except files are sync'd from the guest to the host.
 ```
 $ vagrant plugin install vagrant-rsync-pull
 ```
-1. After installing, edit your Vagrantfile and add a configuration directive similar to the below:
+2. After installing, edit your Vagrantfile and add a configuration directive similar to the below:
 ```
 Vagrant.configure("2") do |config|
   config.vm.box = "dummy"
   config.vm.synced_folder "/home/myuser/myproject", "/opt/myproject", type: "rsync_pull"
 end
 ```
-1. Start up your starting your vagrant box as normal (eg: `vagrant up`)
+3. Start up your starting your vagrant box as normal (eg: `vagrant up`)
 
-## Start syncing Folders
+## Start syncing folders
 
 Folders will be pulled from the guest on `vagrant up`.
 

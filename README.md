@@ -7,18 +7,18 @@ except files are sync'd from the guest to the host.
 
 ## Usage
 
-1. Install using standard Vagrant 1.1+ plugin installation methods. 
+Install using standard Vagrant 1.1+ plugin installation methods. 
 ```
 $ vagrant plugin install vagrant-rsync-pull
 ```
-2. After installing, edit your Vagrantfile and add a configuration directive similar to the below:
+After installing, edit your Vagrantfile and add a configuration directive similar to the below:
 ```
 Vagrant.configure("2") do |config|
   config.vm.box = "dummy"
   config.vm.synced_folder "/home/myuser/myproject", "/opt/myproject", type: "rsync_pull"
 end
 ```
-3. Start up your starting your vagrant box as normal (eg: `vagrant up`)
+Start up your starting your vagrant box as normal (eg: `vagrant up`)
 
 ## Start syncing folders
 

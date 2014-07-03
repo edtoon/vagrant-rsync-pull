@@ -1,0 +1,12 @@
+en:
+  vagrant_rsync_pull:
+    errors:
+      rsync_pull_error: |-
+        There was an error when attemping to sync folders using rsync.
+        Please inspect the error message below for more info.
+
+        Host path: %{hostpath}
+        Guest path: %{guestpath}
+        Error: %{stderr}
+        Full command causing error: 
+        %{command}

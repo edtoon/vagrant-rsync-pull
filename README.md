@@ -18,7 +18,7 @@ Vagrant.configure("2") do |config|
   config.vm.synced_folder "/home/myuser/myproject", "/opt/myproject", type: "rsync_pull"
 end
 ```
-Start up your starting your vagrant box as normal (eg: `vagrant up`)
+Start up your vagrant box as normal (eg: `vagrant up`)
 
 ## Start syncing folders
 
